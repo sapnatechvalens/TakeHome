@@ -53,6 +53,16 @@ Verify installation:
 ```bash
 allure --version
 ```
-
+- **Project Structure:**
+provider-platform-qa/
+├── src/
+│   ├── base/        # Base setup and teardown
+│   ├── pages/       # Page Object classes
+│   ├── utils/       # Utility classes
+│   └── tests/       # Test cases
+├── testng.xml       # TestNG suite
+├── pom.xml          # Maven config
+├── allure-results/  # Test results
+└── README.md        # Documentation
 ## Author
 Sapna Chouhan
