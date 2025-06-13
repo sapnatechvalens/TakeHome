@@ -1,0 +1,6 @@
+base\BaseClass.class
+pages\LoginPage.class
+pages\Logout.class
+pages\PatientForm.class
+pages\Dashboard.class
+utils\UtilClass.class

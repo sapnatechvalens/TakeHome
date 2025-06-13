@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ProviderPlatformSuite">
+  <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="AllTests">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.patientForm"/>
+             <class name="tests.LogoutTest"/>
+        </classes>
+    </test>
+</suite>
