@@ -26,6 +26,7 @@ public class PatientForm {
 	@FindBy(xpath = "//button[text()='Submit']") WebElement submit;
 	
 	
+	// Methods to enter or perform click action in the add patient form
 	public void clickAddPatientBtn() {
 		addPatientBtn.click();
 	}
@@ -59,13 +60,11 @@ public class PatientForm {
     public void selectLanguage(String language) {
     	 select = new Select(lang);
 	     select.selectByVisibleText(language);
-//    	lang.click();
     }
     
     public void selectTimeZone(String zone) {
     	 select = new Select(timeZone);
 	     select.selectByVisibleText(zone);
-//    	timeZone.click();
     }
     
     public void clickSubmit() {

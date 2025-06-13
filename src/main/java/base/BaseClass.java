@@ -10,15 +10,18 @@ import org.testng.annotations.Listeners;
 
 import pages.LoginPage;
 //@Listeners({io.qameta.allure.testng.AllureTestNg.class})
+
+// Class to perform the before class actions and contain browser driver interaction methods
 public class BaseClass {
 
-	 protected WebDriver driver;// Use protected so child classes can access it
+	 protected WebDriver driver;
 	 LoginPage login;
 		public BaseClass() {
 		
-			driver = new ChromeDriver(); // Initialize WebDriver properly
+			driver = new ChromeDriver(); 
 		}
 		
+		// Open the browser
 		@BeforeClass
 		public void BrowserMethod() {
 		driver.get("https://qa-takehome.dtxplus.com/");
@@ -26,6 +29,7 @@ public class BaseClass {
 	        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(25));
 	        driver.manage().window().maximize();
 		}
+		// Perform login
 		public void performLogin() throws InterruptedException {
 			login = new LoginPage(driver);
 			login.enetrUserName("dtxplus");
@@ -33,6 +37,7 @@ public class BaseClass {
 	        login.clickLogin();
 	    }
 		
+		// tear down the browser
 		 @AfterClass
 		    public void tearDown() {
 		        if (driver != null) {

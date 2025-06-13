@@ -199,9 +199,9 @@
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [960815b0367a73655382b307da9624d4, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50185/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 960815b0367a73655382b307da9624d4
+Command: [771f8e10dd9a77205d2d0f474518b2b2, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 771f8e10dd9a77205d2d0f474518b2b2
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -217,7 +217,7 @@ Session ID: 960815b0367a73655382b307da9624d4
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Login without password)                  </em>
+(ATC-004, Login without password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,12 +234,12 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- invalidDOB -->
                   <span class="method-name">invalidDOB</span>
                   <div class="stack-trace">java.lang.AssertionError: entry not appear in table expected [4] but found [5]
-	at tests.patientForm.invalidDOB(patientForm.java:102)
+	at tests.patientForm.invalidDOB(patientForm.java:101)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Enter Invalid DOB formate)                  </em>
+(ATC-009,Enter Invalid DOB formate)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -248,12 +248,12 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- testFutureDOB -->
                   <span class="method-name">testFutureDOB</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at tests.patientForm.testFutureDOB(patientForm.java:124)
+	at tests.patientForm.testFutureDOB(patientForm.java:123)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Future DOB entry)                  </em>
+(ATC-010, Enter future DOB)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -262,12 +262,12 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- testSpecialCharInMRN -->
                   <span class="method-name">testSpecialCharInMRN</span>
                   <div class="stack-trace">java.lang.AssertionError: entry not appear in table expected [6] but found [7]
-	at tests.patientForm.testSpecialCharInMRN(patientForm.java:147)
+	at tests.patientForm.testSpecialCharInMRN(patientForm.java:146)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Special characters in MRN)                  </em>
+(ATC-011, Special characters in MRN)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -284,7 +284,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- loginWithBlankUsername -->
                   <span class="method-name">loginWithBlankUsername</span>
                   <em>
-(Login without username)                  </em>
+(ATC-003, Login without username)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -293,7 +293,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- loginWithBlankUsernameAndPassword -->
                   <span class="method-name">loginWithBlankUsernameAndPassword</span>
                   <em>
-(Login with blank username and password)                  </em>
+(ATC-005, Login with blank username and password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -302,7 +302,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- loginWithInvalidCredentials -->
                   <span class="method-name">loginWithInvalidCredentials</span>
                   <em>
-(Login with Invalid credentials)                  </em>
+( ATC-002, Login with Invalid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -311,7 +311,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- logintest -->
                   <span class="method-name">logintest</span>
                   <em>
-(Login with valid credentials)                  </em>
+( ATC-001, Login with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,7 +328,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- addPatient -->
                   <span class="method-name">addPatient</span>
                   <em>
-(Fill all the fields with valid data)                  </em>
+(ATC-006, Fill all the fields with valid data)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -337,7 +337,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- clickSubmit -->
                   <span class="method-name">clickSubmit</span>
                   <em>
-(Leave all the fields empty and click submit)                  </em>
+(ATC-008, Leave all the fields empty and click submit)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -346,7 +346,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- validateTableEntry -->
                   <span class="method-name">validateTableEntry</span>
                   <em>
-(When submit the form, Table should increased by one)                  </em>
+(ATC-007, When submit the form, Table should increased by one)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -363,7 +363,7 @@ Session ID: 960815b0367a73655382b307da9624d4
                   </a> <!-- testSpecialCharInMRN -->
                   <span class="method-name">testSpecialCharInMRN</span>
                   <em>
-(Special characters in MRN)                  </em>
+(ATC-012, Verify successful logout)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -427,58 +427,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithBlankUsername')
-data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 2779);
+data.setCell(0, 1, 'addPatient')
+data.setCell(0, 2, 'tests.patientForm')
+data.setCell(0, 3, 4292);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logintest')
-data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 2456);
+data.setCell(1, 1, 'validateTableEntry')
+data.setCell(1, 2, 'tests.patientForm')
+data.setCell(1, 3, 3841);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSpecialCharInMRN')
-data.setCell(2, 2, 'tests.LogoutTest')
-data.setCell(2, 3, 2306);
+data.setCell(2, 1, 'loginWithBlankPassword')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 1915);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addPatient')
+data.setCell(3, 1, 'testSpecialCharInMRN')
 data.setCell(3, 2, 'tests.patientForm')
-data.setCell(3, 3, 2189);
+data.setCell(3, 3, 1582);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSpecialCharInMRN')
+data.setCell(4, 1, 'invalidDOB')
 data.setCell(4, 2, 'tests.patientForm')
-data.setCell(4, 3, 2087);
+data.setCell(4, 3, 1581);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testFutureDOB')
 data.setCell(5, 2, 'tests.patientForm')
-data.setCell(5, 3, 2000);
+data.setCell(5, 3, 1562);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'invalidDOB')
-data.setCell(6, 2, 'tests.patientForm')
-data.setCell(6, 3, 1974);
+data.setCell(6, 1, 'loginWithBlankUsername')
+data.setCell(6, 2, 'tests.LoginTest')
+data.setCell(6, 3, 1364);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validateTableEntry')
-data.setCell(7, 2, 'tests.patientForm')
-data.setCell(7, 3, 1827);
+data.setCell(7, 1, 'testSpecialCharInMRN')
+data.setCell(7, 2, 'tests.LogoutTest')
+data.setCell(7, 3, 1312);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginWithInvalidCredentials')
+data.setCell(8, 1, 'logintest')
 data.setCell(8, 2, 'tests.LoginTest')
-data.setCell(8, 3, 1781);
+data.setCell(8, 3, 1188);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginWithBlankPassword')
+data.setCell(9, 1, 'loginWithBlankUsernameAndPassword')
 data.setCell(9, 2, 'tests.LoginTest')
-data.setCell(9, 3, 1527);
+data.setCell(9, 3, 1138);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'loginWithBlankUsernameAndPassword')
+data.setCell(10, 1, 'loginWithInvalidCredentials')
 data.setCell(10, 2, 'tests.LoginTest')
-data.setCell(10, 3, 665);
+data.setCell(10, 3, 1011);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'clickSubmit')
 data.setCell(11, 2, 'tests.patientForm')
-data.setCell(11, 3, 469);
+data.setCell(11, 3, 332);
 window.suiteTableData['ProviderPlatformSuite']= { tableData: data, tableDiv: 'times-div-ProviderPlatformSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-ProviderPlatformSuite">
               </div> <!-- times-div-ProviderPlatformSuite -->
             </div> <!-- times-div -->
@@ -511,89 +511,89 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">logintest</span>
-                <span class="method-start">1298 ms</span>
+                <span class="method-start">1843 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidCredentials</span>
-                <span class="method-start">3895 ms</span>
+                <span class="method-start">3181 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithBlankUsername</span>
-                <span class="method-start">5681 ms</span>
+                <span class="method-start">4199 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginWithBlankPassword</span>
-                <span class="method-start">8478 ms</span>
+                <span class="method-start">5578 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithBlankUsernameAndPassword</span>
-                <span class="method-start">10016 ms</span>
+                <span class="method-start">7506 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10703 ms</span>
+                <span class="method-start">8655 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.patientForm</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">BrowserMethod</span>
-                <span class="method-start">11400 ms</span>
+                <span class="method-start">9592 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">runLogin</span>
-                <span class="method-start">13931 ms</span>
+                <span class="method-start">11736 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">addPatient</span>
-                <span class="method-start">15407 ms</span>
+                <span class="method-start">13147 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateTableEntry</span>
-                <span class="method-start">17600 ms</span>
+                <span class="method-start">17444 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickSubmit</span>
-                <span class="method-start">19431 ms</span>
+                <span class="method-start">21289 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">invalidDOB</span>
-                <span class="method-start">19905 ms</span>
+                <span class="method-start">21624 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testFutureDOB</span>
-                <span class="method-start">21885 ms</span>
+                <span class="method-start">23211 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSpecialCharInMRN</span>
-                <span class="method-start">23889 ms</span>
+                <span class="method-start">24777 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25980 ms</span>
+                <span class="method-start">26364 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">BrowserMethod</span>
-                <span class="method-start">26342 ms</span>
+                <span class="method-start">26667 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testSpecialCharInMRN</span>
-                <span class="method-start">27570 ms</span>
+                <span class="method-start">28325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29880 ms</span>
+                <span class="method-start">29642 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

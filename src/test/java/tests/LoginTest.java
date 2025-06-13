@@ -13,7 +13,7 @@ import pages.LoginPage;
 
 public class LoginTest extends BaseClass {
 	LoginPage log;
-	   @Test(description = "Login with valid credentials",priority = 1, enabled = true)
+	   @Test(description = " ATC-001, Login with valid credentials",priority = 1)
   public void logintest() throws IOException, InterruptedException {
       BrowserMethod();
       log = new LoginPage(driver); 
@@ -26,7 +26,7 @@ public class LoginTest extends BaseClass {
   }
 	   
 
-	   @Test(description = "Login with Invalid credentials", priority = 2, enabled = true)
+	   @Test(description = " ATC-002, Login with Invalid credentials", priority = 2)
 	   public void loginWithInvalidCredentials() throws InterruptedException {
 	       BrowserMethod();
 	       log = new LoginPage(driver);
@@ -41,7 +41,7 @@ public class LoginTest extends BaseClass {
 	   }
 	   
   
-	   @Test(description = "Login without username", priority = 3, enabled = true)
+	   @Test(description = "ATC-003, Login without username", priority = 3)
 	   public void loginWithBlankUsername() throws InterruptedException {
 	       BrowserMethod();
 	       log = new LoginPage(driver);
@@ -57,7 +57,7 @@ public class LoginTest extends BaseClass {
 	   }
 	   
 
-	   @Test(description = "Login without password", priority = 4)
+	   @Test(description = "ATC-004, Login without password", priority = 4)
 	   public void loginWithBlankPassword() throws InterruptedException {
 	       BrowserMethod();
 	       log = new LoginPage(driver);
@@ -73,7 +73,7 @@ public class LoginTest extends BaseClass {
 	   
 	   
 
-	   @Test(description ="Login with blank username and password", priority = 5, enabled = true)
+	   @Test(description ="ATC-005, Login with blank username and password", priority = 5)
 	   public void loginWithBlankUsernameAndPassword() throws InterruptedException {
 	       BrowserMethod();
 	       log = new LoginPage(driver);

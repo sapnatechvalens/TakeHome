@@ -15,7 +15,7 @@ import utils.UtilClass;
 
 public class LogoutTest extends BaseClass {
 	Logout log;
-	  @Test(description = "Special characters in MRN", priority = 6)
+	  @Test(description = "ATC-012, Verify successful logout", priority = 12)
 	    public void testSpecialCharInMRN() throws InterruptedException {
 	           BrowserMethod();
 			   performLogin();

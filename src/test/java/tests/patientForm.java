@@ -27,9 +27,8 @@ public class patientForm extends BaseClass {
 	        form = new PatientForm(driver);
 	    }
 
-    @Test(description = "Fill all the fields with valid data", priority = 1)
+    @Test(description = "ATC-006, Fill all the fields with valid data", priority = 6)
     public void addPatient() throws Exception {
-//		   dashboard = new Dashboard(driver);
 		   List<String> existingMRNs = dashboard.getAllMRNs();
 	        countBefore = existingMRNs.size();
         Map<String, String> patient = UtilClass.generateRandomPatientData();
@@ -47,7 +46,7 @@ public class patientForm extends BaseClass {
 
     }
     
-    @Test(description = "When submit the form, Table should increased by one", priority = 2)
+    @Test(description = "ATC-007, When submit the form, Table should increased by one", priority = 7)
     public void validateTableEntry() throws Exception {
 
 		   List<String> existingMRNs = dashboard.getAllMRNs();
@@ -68,7 +67,7 @@ public class patientForm extends BaseClass {
         Assert.assertEquals(countAfter, countBefore + 1, "entry not appear in table");   
     }
     
-    @Test(description = "Leave all the fields empty and click submit", priority = 3)
+    @Test(description = "ATC-008, Leave all the fields empty and click submit", priority = 8)
     public void clickSubmit() throws Exception {
 
 		   List<String> existingMRNs = dashboard.getAllMRNs();
@@ -81,7 +80,7 @@ public class patientForm extends BaseClass {
     }
     
     
-    @Test(description = "Enter Invalid DOB formate", priority = 4, enabled = true)
+    @Test(description = "ATC-009,Enter Invalid DOB formate", priority = 9)
     public void invalidDOB() throws Exception {
 		   List<String> existingMRNs = dashboard.getAllMRNs();
 	        countBefore = existingMRNs.size();
@@ -104,7 +103,7 @@ public class patientForm extends BaseClass {
     }
     
     
-    @Test(priority = 5, description = "Future DOB entry")
+    @Test(description = "ATC-010, Enter future DOB", priority = 10)
     public void testFutureDOB() throws InterruptedException {
 		   List<String> existingMRNs = dashboard.getAllMRNs();
 	        countBefore = existingMRNs.size();
@@ -126,7 +125,7 @@ public class patientForm extends BaseClass {
     }
 
 
-    @Test(description = "Special characters in MRN", priority = 6)
+    @Test(description = "ATC-011, Special characters in MRN", priority = 11)
     public void testSpecialCharInMRN() throws InterruptedException {
 
 		   List<String> existingMRNs = dashboard.getAllMRNs();
@@ -149,13 +148,3 @@ public class patientForm extends BaseClass {
 
 }
 
-
-//String generatedMRN =   form.enterMRN("1003");
-//form.patientFName("Mac");
-//form.patientLName("John");
-//form.selectDOB("05/31/1999");
-//form.selectDischarge("2025-06-13T16:45");
-//form.addPhone("8989898989");
-//form.selectLanguage("Spanish");
-//form.selectTimeZone("PST");
-//form.clickSubmit();

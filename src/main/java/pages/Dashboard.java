@@ -50,7 +50,7 @@ public class Dashboard {
         return rowData;
     }
 
-    // Count total patients in the table
+    // Method to count total patients in the table
     public int getPatientCount() {
         return driver.findElements(By.xpath("//table[@id='patients-table']/tbody/tr")).size();
     }
